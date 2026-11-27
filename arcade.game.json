@@ -1,0 +1,29 @@
+{
+  "slug": "whiteout",
+  "title": "Whiteout: Level 37",
+  "summary": "Find the surface stairwell in a maze of tiled poolrooms. Dive through flooded baths, peek around corners and listen for the Locust.",
+  "genres": ["Horror", "Exploration"],
+  "tags": ["Single player", "First person", "Backrooms"],
+  "input": "Keyboard and mouse or touch",
+  "releaseDate": "2026-11-27",
+  "buildDir": "arcade-build",
+  "entry": "index.html",
+  "mediaDir": "arcade-media",
+  "cover": "cover.jpg",
+  "coverAlt": "A skeletal Locust stands on a tiled walkway beside a sunlit pool in Level 37.",
+  "source": { "repository": "TTTMKACKER255/whiteout" },
+  "controls": [
+    ["Move and look", "WASD and mouse"],
+    ["Sprint", "Shift"],
+    ["Crouch", "C"],
+    ["Jump or swim up", "Space"],
+    ["Dive", "Ctrl"],
+    ["Peek left or right", "Q or E"],
+    ["Pause", "Esc"]
+  ],
+  "launchTest": {
+    "ready": "body.ready #enter",
+    "start": "#enter",
+    "started": "body.ready #hud:not([hidden])"
+  }
+}
